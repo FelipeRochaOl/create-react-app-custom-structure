@@ -4,5 +4,8 @@
   "description": "Create a framework for react with webpack, typescript, babel, eslint, saas and styled components",
   "main": "index.js",
   "author": "Felipe Rocha",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "docker": "./nodedock/start.sh"
+  }
 }
