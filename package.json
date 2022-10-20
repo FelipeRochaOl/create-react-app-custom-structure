@@ -1,0 +1,8 @@
+{
+  "name": "create-react-app-custom-structure",
+  "version": "1.0.0",
+  "description": "Create a framework for react with webpack, typescript, babel, eslint, saas and styled components",
+  "main": "index.js",
+  "author": "Felipe Rocha",
+  "license": "MIT"
+}
