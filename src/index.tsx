@@ -1,6 +1,12 @@
 import { render } from "react-dom";
 import { App } from './components/App';
 
-import './styles/global';
+import { GlobalStyle } from './styles/global';
 
-render(<App title="Component Title"/>, document.getElementById('root'));
+render(
+  <>
+    <GlobalStyle />
+    <App title="Component Title"/>
+  </>,
+  document.getElementById('root')
+);
