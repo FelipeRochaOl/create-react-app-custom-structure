@@ -1,6 +1,6 @@
 import { render } from "react-dom";
-import { App } from './App';
+import { App } from './components/App';
 
-import './styles/global'
+import './styles/global';
 
-render(<App />, document.getElementById('root'))
+render(<App />, document.getElementById('root'));
