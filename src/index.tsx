@@ -3,4 +3,4 @@ import { App } from './components/App';
 
 import './styles/global';
 
-render(<App />, document.getElementById('root'));
+render(<App title="Component Title"/>, document.getElementById('root'));

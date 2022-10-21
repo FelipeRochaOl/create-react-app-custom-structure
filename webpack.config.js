@@ -5,7 +5,7 @@ const isDevelopment = process.env.NODE_ENV !== 'production';
 
 module.exports = {
   mode: isDevelopment ? 'development' : 'production',
-  entry: path.resolve(__dirname, 'src', 'index.jsx'),
+  entry: path.resolve(__dirname, 'src', 'index.tsx'),
   devtool: isDevelopment ? 'eval-source-map' : 'inline-source-map',
   output: {
     filename: 'bundle.js',
@@ -13,7 +13,7 @@ module.exports = {
     clean: true,
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.scss'],
+    extensions: ['.js', '.jsx', '.scss', '.ts', '.tsx'],
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -26,7 +26,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx$/i,
+        test: /\.(j|t)sx$/i,
         exclude: /node_modules/,
         use: ['babel-loader'],
       },
