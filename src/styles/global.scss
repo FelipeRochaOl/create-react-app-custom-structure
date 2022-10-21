@@ -2,10 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: 0;
+}
 
-  body {
-    font: Arial, Helverica, sans-serif;
-    background: #333;
-    color: #FFF;
-  }
+body {
+  font: Poppins, Arial, Helverica, sans-serif;
+  background: #333;
+  color: #FFF;
+}
+
+input, textarea {
+  font-family: "Poppins";
+  outline: none;
 }
